@@ -1,0 +1,16 @@
+{
+  "allowed": false,
+  "violations": [
+    {
+      "step": 3,
+      "reason": "approval_missing"
+    },
+    {
+      "step": 3,
+      "reason": "stale_or_unknown_state"
+    }
+  ],
+  "events_checked": 3,
+  "executed_actions": false,
+  "mode": "offline_trace_audit"
+}

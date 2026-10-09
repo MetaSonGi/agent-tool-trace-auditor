@@ -1,0 +1,43 @@
+{
+  "policy": {
+    "allowed_tools": [
+      "read_sensor",
+      "search_manual",
+      "propose_speed"
+    ],
+    "write_tools": [
+      "propose_speed"
+    ],
+    "citation_required": true
+  },
+  "state_versions": {
+    "robot-1": 7
+  },
+  "trace": [
+    {
+      "event_id": "e1",
+      "step": 1,
+      "tool": "read_sensor",
+      "effect": "read",
+      "resource": "robot-1"
+    },
+    {
+      "event_id": "e2",
+      "step": 2,
+      "tool": "search_manual",
+      "effect": "decision",
+      "resource": "manual",
+      "citations": [
+        "manual@2#heat"
+      ]
+    },
+    {
+      "event_id": "e3",
+      "step": 3,
+      "tool": "propose_speed",
+      "effect": "write",
+      "resource": "robot-1",
+      "observed_version": 6
+    }
+  ]
+}
